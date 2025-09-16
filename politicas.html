@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Políticas | Rancho Constanza</title>
+  <meta name="description" content="Políticas de reservas, cancelaciones y términos del Rancho Constanza." />
+  <style>
+    :root{
+      --bg:#0f172a;          /* slate-900 */
+      --card:#111827;        /* gray-900 */
+      --muted:#94a3b8;       /* slate-400 */
+      --text:#e5e7eb;        /* gray-200 */
+      --accent:#22d3ee;      /* cyan-400 */
+      --accent2:#34d399;     /* emerald-400 */
+      --ring:#1f2937;        /* gray-800 */
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;height:100%;}
+    body{
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif;
+      background: radial-gradient(1200px 600px at 10% 0%, #0b1229 0%, var(--bg) 45%, #0b1229 100%);
+      color:var(--text);
+      line-height:1.6;
+    }
+    .wrap{
+      max-width:1000px; margin: clamp(16px,4vw,48px) auto; padding: 0 clamp(12px,3vw,24px);
+    }
+    header{
+      display:flex; align-items:center; justify-content:space-between; gap:16px; margin-bottom:24px;
+    }
+    .brand{display:flex; align-items:center; gap:12px}
+    .brand .dot{width:12px; height:12px; border-radius:50%; background:linear-gradient(135deg, var(--accent), var(--accent2)); box-shadow:0 0 24px rgba(34,211,238,.5)}
+    h1{font-size:clamp(22px,3.4vw,36px); margin:0}
+    .subtitle{color:var(--muted); margin-top:4px; font-size:clamp(13px,1.6vw,15px)}
+
+    .card{
+      background: linear-gradient(180deg, rgba(17,24,39,.8), rgba(17,24,39,.6));
+      border:1px solid var(--ring);
+      border-radius:16px; padding:clamp(16px,2.6vw,28px); box-shadow:0 8px 30px rgba(0,0,0,.35);
+      margin-bottom:16px;
+    }
+    .grid{display:grid; gap:16px}
+    @media(min-width:900px){
+      .grid{grid-template-columns: 1.15fr .85fr}
+    }
+    h2{font-size:clamp(18px,2.6vw,24px); margin:0 0 12px}
+    h3{font-size:clamp(16px,2.2vw,20px); margin:16px 0 8px}
+
+    .kv{display:grid; grid-template-columns: 1fr auto; gap:10px; padding:12px; border:1px dashed var(--ring); border-radius:12px; background:rgba(2,6,23,.35)}
+    .kv div strong{letter-spacing:.3px}
+    ul,ol{margin:8px 0 0 18px}
+    li{margin:8px 0}
+    .note{font-size:13px; color:var(--muted)}
+
+    .badge{display:inline-flex;align-items:center;gap:8px;padding:8px 12px;border:1px solid var(--ring);border-radius:999px;background:rgba(2,6,23,.35);font-size:13px}
+    .dot-sm{width:8px;height:8px;border-radius:50%;background:var(--accent)}
+
+    .actions{display:flex; gap:10px; flex-wrap:wrap}
+    button, a.btn{appearance:none; border:none; cursor:pointer; padding:10px 14px; border-radius:12px; font-weight:600; color:#0b1229; background:linear-gradient(135deg,var(--accent),var(--accent2)); box-shadow:0 8px 18px rgba(34,211,238,.25)}
+    a.btn{display:inline-flex; text-decoration:none}
+    .ghost{background:transparent; color:var(--text); border:1px solid var(--ring); box-shadow:none}
+    .ghost:hover{border-color:var(--accent)}
+
+    footer{margin-top:24px; text-align:center; color:var(--muted); font-size:13px}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <span class="dot" aria-hidden="true"></span>
+        <div>
+          <h1>Políticas del Rancho Constanza</h1>
+          <div class="subtitle">Reservas, cancelaciones y términos de estadía</div>
+        </div>
+      </div>
+      <div class="actions">
+        <button class="ghost" onclick="window.print()" aria-label="Imprimir políticas">Imprimir</button>
+      </div>
+    </header>
+
+    <div class="grid">
+      <!-- Columna izquierda: Contenido principal -->
+      <section class="card" aria-labelledby="horarios">
+        <h2 id="horarios">Horarios</h2>
+        <div class="kv" role="group" aria-label="Horarios de entrada y salida">
+          <div><strong>Entrada (Check‑in):</strong></div>
+          <div>03:00 PM</div>
+          <div><strong>Salida (Check‑out):</strong></div>
+          <div>01:00 PM</div>
+        </div>
+      </section>
+
+      <aside class="card" aria-labelledby="etiquetas">
+        <h2 id="etiquetas">Resumen</h2>
+        <div class="badge" title="Check-in">
+          <span class="dot-sm"></span> Check‑in 3:00 PM
+        </div>
+        <div class="badge" title="Check-out" style="margin-top:8px">
+          <span class="dot-sm"></span> Check‑out 1:00 PM
+        </div>
+      </aside>
+    </div>
+
+    <section class="card" aria-labelledby="cancelacion">
+      <h2 id="cancelacion">Políticas de cancelación</h2>
+      <p><strong>POLÍTICA DE CANCELACIÓN, TRANSFERIR Y /O CAMBIAR RESERVAS:</strong></p>
+      <ul>
+        <li>En caso de avisar que no asistirá al hotel <em>48 horas antes</em> no hay penalidad.</li>
+        <li>Si avisa <em>24 horas antes</em>, se cobrará el <strong>50%</strong> de la estadía.</li>
+        <li>Si cancela el <em>mismo día</em>, se cobrará el <strong>100%</strong> de la estadía.</li>
+      </ul>
+      <p><strong>Pagos no reembolsables:</strong> Los pagos no son reembolsables; en caso de tener uno, se le procede a acreditar el <em>monto</em> (texto original indicaba “motor”) durante un año.</p>
+    </section>
+
+    <section class="card" aria-labelledby="terminos">
+      <h2 id="terminos">Términos y condiciones</h2>
+      <ol>
+        <li><strong>Retraso de Entrada:</strong> Si llegas más tarde de la hora de entrada o en una fecha posterior, notificarlo al Rancho con al menos 48 horas de anticipación. De lo contrario, se considerará como un <em>no show</em>.</li>
+        <li><strong>Transferencia de Estadía o Cambio de Fecha:</strong> La estadía es transferible mediante un certificado de invitado emitido por el Rancho. Puedes cambiar la fecha de reserva con 48 horas de anticipación. No se realizan reembolsos en efectivo; solo se permite la transferencia a otra fecha dentro de un período de 1 año.</li>
+        <li><strong>Asignación de la Unidad:</strong> El Rancho se reserva el derecho de asignar otra unidad del mismo tipo y capacidad si es necesario.</li>
+        <li><strong>Transferencias:</strong> Solo el titular de la reserva puede solicitar un certificado de invitado para transferir la reserva.</li>
+        <li><strong>No Show:</strong> Si no te presentas ni avisas con al menos 48 horas de anticipación, la reserva será cancelada sin posibilidad de transferencia ni reembolso.</li>
+        <li><strong>Violación de Cantidad de Personas en Habitación o Villas:</strong> El número de personas registrado en la reserva debe coincidir con el número al momento del registro de entrada. Cualquier exceso será penalizado con tarifas adicionales.</li>
+        <li><strong>Política de Cancelación para Transferir y/o Cambiar Reservas:</strong> Es importante que nuestros clientes estén al tanto de que no se efectuarán devoluciones en efectivo o depósito en caso de cancelación, <strong>EL BALANCE ES ACREDITADO POR UN AÑO</strong>:
+          <ul>
+            <li>Sin penalidad si se cancela con 48 horas de anticipación.</li>
+            <li>Se cobrará el <strong>50% del depósito</strong> si se cancela con 24 horas de anticipación.</li>
+            <li>Se cobrará el <strong>100%</strong> si se cancela el mismo día de la reserva.</li>
+          </ul>
+        </li>
+        <li><strong>Exceso de Ruido:</strong> Se prohíben los niveles de ruido que molesten a los vecinos. El incumplimiento de esta política será penalizado.</li>
+      </ol>
+      <p class="note">Horarios de Check-in: A partir de las 3:00 pm · Horarios de Check-out: A la 1:00 pm.</p>
+    </section>
+
+    <footer>
+      © <span id="yr"></span> Rancho Constanza · Esta página forma parte del menú de enlaces.
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('yr').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

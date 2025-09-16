@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hotel Rancho Constanza</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background: url('imagenes/fondo.jpeg') no-repeat center center/cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .card {
+      width: 370px;
+      background: rgba(255, 255, 255, 0.95);
+      border-radius: 20px;
+      box-shadow: 0 4px 25px rgba(0,0,0,0.3);
+      text-align: center;
+      padding: 20px;
+      animation: fadeIn 0.8s ease-in-out;
+      backdrop-filter: blur(4px);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .logo {
+      width: 90%;
+      max-width: 300px;
+      height: auto;
+      margin-bottom: 20px;
+      border: none; 
+      border-radius: 0; /* Sin círculos */
+    }
+
+    .card h2 {
+      margin: 5px 0;
+      color: #222;
+      font-size: 26px;
+    }
+
+    .card p {
+      font-size: 15px;
+      color: #444;
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      display: block;
+      text-decoration: none;
+      color: white;
+      padding: 14px;
+      margin: 10px 0;
+      border-radius: 12px;
+      font-weight: bold;
+      font-size: 16px;
+      transition: transform 0.2s, background 0.3s;
+    }
+
+    .btn:hover {
+      transform: scale(1.05);
+    }
+
+    /* Colores personalizados */
+    .btn.politicas { background: #ff9800; }
+    .btn.tarifas { background: #4CAF50; }
+    .btn.servicios { background: #0093E9; }
+    .btn.actividades { background: #673AB7; }
+    .btn.reclamos { background: #FF5722; }
+    .btn.reservas { background: #25D366; }
+    .btn.ubicacion { background: #f44336; }
+    .btn.facebook { background: #1877F2; }
+    .btn.instagram { background: #E4405F; }
+
+
+
+
+    /*accion de oscurecimiento*/
+    .btn:hover { filter: brightness(0.9); }
+  </style>
+</head>
+<body>
+
+
+
+
+  <div class="card">
+    <img src="imagenes/logo.png" alt="Logo Hotel" class="logo">
+    <h2>Hotel Rancho Constanza</h2>
+    <p>Confort, descanso y el mejor servicio para ti</p>
+
+
+
+    <a href="politicas.html" class="btn politicas">Políticas del Hotel</a>
+    <a href="tarifas.html" class="btn tarifas">Tarifas</a>
+    <a href="Actividades.html" class="btn servicios">Actividades</a>
+    <a href="https://wa.me/8095393268" class="btn reservas">Reservar por WhatsApp</a>
+<a href="https://www.google.com/maps/dir/18.9157173,-70.7231261/Colonia+Kennedy+%237,+Constanza+41000/@18.9158574,-70.7239482,17.94z/data=!4m8!4m7!1m0!1m5!1m1!1s0x8eb03e03d385abdd:0x8d61bc057c86d070!2m2!1d-70.7231833!2d18.915504?entry=ttu&g_ep=EgoyMDI1MDgxMy4wIKXMDSoASAFQAw%3D%3D" 
+   class="btn ubicacion" target="_blank">
+   📍 Ubicación
+</a>
+<!-- Botones de redes sociales -->
+<a href="https://facebook.com/RanchoConstanza" class="btn facebook" target="_blank">Facebook</a>
+<a href="https://instagram.com/RanchoConstanza" class="btn instagram" target="_blank">Instagram</a>
+
+    <a href="https://ranchoconstanza.com/contacto" class="btn reclamos">Aportes</a>
+  </div>
+
+  <!-- eventos flotante  -->
+  
+
+</body>
+</html>

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tarifas y Galería | Rancho Constanza</title>
+<style>
+  body { font-family: Arial, sans-serif; margin:0; padding:0; background:#f0f0f0; color:#333; }
+  header { background:#2c3e50; color:white; text-align:center; padding:20px; }
+  header p { margin-top:5px; font-size:16px; }
+  #checkin { padding:8px; border-radius:5px; border:1px solid #ccc; margin-top:5px; }
+
+  .container { max-width:1200px; margin:20px auto; padding:10px; display:grid; gap:20px; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); }
+
+  .card {
+    background:#fff; border-radius:15px; overflow:hidden; box-shadow:0 4px 12px rgba(0,0,0,0.15); transition:.3s;
+  }
+  .card:hover { transform:translateY(-5px); box-shadow:0 8px 20px rgba(0,0,0,0.25);}
+  .card img { width:100%; height:160px; object-fit:cover; }
+  .card-body { padding:15px; }
+  .card-body h3 { margin:10px 0; color:#2c3e50; }
+  .card-body p { font-size:14px; margin:5px 0; color:#555; }
+  .price { margin-top:10px; font-weight:bold; font-size:16px; color:#2c3e50; }
+  
+  .btn-more {
+    display:inline-block;
+    margin-top:10px;
+    padding:8px 12px;
+    background:#22d3ee;
+    color:white;
+    border-radius:8px;
+    text-decoration:none;
+    transition:0.3s;
+  }
+  .btn-more:hover { background:#34d399; }
+
+  .whatsapp-float {
+    position: fixed; width:60px; height:60px; bottom:20px; right:20px; background-color:#25d366;
+    color:#fff; border-radius:50%; display:flex; justify-content:center; align-items:center; font-size:30px;
+    box-shadow:2px 2px 5px rgba(0,0,0,0.3); z-index:100; text-decoration:none;
+  }
+  .whatsapp-float:hover { background-color:#20b955; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Tarifas y Galería | Rancho Constanza</h1>
+  <p>Selecciona tu fecha y consulta los precios actualizados</p>
+  <label for="checkin" style="display:block; margin-top:10px;">Fecha de llegada:</label>
+  <input type="date" id="checkin">
+</header>
+
+<div class="container">
+  <!-- Habitaciones -->
+  <div class="card" data-base="79" data-room="Habitación Standard">
+    <img src="202.jpeg" alt="Habitación Standard">
+    <div class="card-body">
+      <h3>Habitación Standard</h3>
+      <p>Cómoda habitación para 2 personas.</p>
+      <div class="price">USD$ 79 por noche</div>
+      <a href="https://wa.me/18095393268?text=Hola,%20quiero%20información%20sobre%20la%20Habitación%20Standard" class="btn-more" target="_blank">Más información</a>
+    </div>
+  </div>
+
+  <div class="card" data-base="124" data-room="Habitación Doble">
+    <img src="203.jpeg" alt="Habitación Doble">
+    <div class="card-body">
+      <h3>Habitación Doble</h3>
+      <p>Habitación espaciosa con 2 camas dobles.</p>
+      <div class="price">USD$ 124 por noche</div>
+      <a href="https://wa.me/18095393268?text=Hola,%20quiero%20información%20sobre%20la%20Habitación%20Doble" class="btn-more" target="_blank">Más información</a>
+    </div>
+  </div>
+
+  <div class="card" data-base="160" data-room="Villa 4 personas">
+    <img src="villa4.jpeg" alt="Villa 4 personas">
+    <div class="card-body">
+      <h3>Villa 4 personas</h3>
+      <p>Villa con espacio para 4 personas y área privada.</p>
+      <div class="price">USD$ 160 por noche</div>
+      <a href="https://wa.me/18095393268?text=Hola,%20quiero%20información%20sobre%20la%20Villa%204%20personas" class="btn-more" target="_blank">Más información</a>
+    </div>
+  </div>
+
+  <div class="card" data-base="180" data-room="Villa 5 personas">
+    <img src="villa 5.jpeg" alt="Villa 5 personas">
+    <div class="card-body">
+      <h3>Villa 5 personas</h3>
+      <p>Perfecta para grupos pequeños o familias.</p>
+      <div class="price">USD$ 180 por noche</div>
+      <a href="https://wa.me/18095393268?text=Hola,%20quiero%20información%20sobre%20la%20Villa%205%20personas" class="btn-more" target="_blank">Más información</a>
+    </div>
+  </div>
+
+  <div class="card" data-base="190" data-room="Villa 6 personas">
+    <img src="villa6.jpeg" alt="Villa 6 personas">
+    <div class="card-body">
+      <h3>Villa 6 personas</h3>
+      <p>Amplia villa con jardín privado y terraza.</p>
+      <div class="price">USD$ 190 por noche</div>
+      <a href="https://wa.me/18095393268?text=Hola,%20quiero%20información%20sobre%20la%20Villa%206%20personas" class="btn-more" target="_blank">Más información</a>
+    </div>
+  </div>
+
+  <div class="card" data-base="180" data-room="Suite Familiar">
+    <img src="301.jpeg" alt="Suite Familiar">
+    <div class="card-body">
+      <h3>Suite Familiar</h3>
+      <p>Suite ideal para familias grandes con todas las comodidades.</p>
+      <div class="price">USD$ 180 por noche</div>
+      <a href="https://wa.me/18095393268?text=Hola,%20quiero%20información%20sobre%20la%20Suite%20Familiar" class="btn-more" target="_blank">Más información</a>
+    </div>
+  </div>
+
+  <div class="card" data-base="119" data-room="Suite Junior">
+    <img src="201.jpeg" alt="Suite Junior">
+    <div class="card-body">
+      <h3>Suite Junior</h3>
+      <p>Espaciosa y elegante suite para 2-3 personas.</p>
+      <div class="price">USD$ 119 por noche</div>
+      <a href="https://wa.me/18095393268?text=Hola,%20quiero%20información%20sobre%20la%20Suite%20Junior" class="btn-more" target="_blank">Más información</a>
+    </div>
+  </div>
+
+  <!-- Espacios adicionales -->
+  <div class="card" data-base="0" data-room="Área Verde">
+    <img src="areaverde.jpeg" alt="Área Verde">
+    <div class="card-body">
+      <h3>Área Verde</h3>
+      <p>Amplias áreas verdes para paseos y actividades al aire libre.</p>
+      <a href="https://wa.me/18095393268?text=Hola,%20quiero%20información%20sobre%20el%20Área%20Verde" class="btn-more" target="_blank">Más información</a>
+    </div>
+  </div>
+
+  <div class="card" data-base="0" data-room="Salón de Eventos">
+    <img src="salon.jpeg" alt="Salón de Eventos">
+    <div class="card-body">
+      <h3>Salón de Eventos</h3>
+      <p>Perfecto para bodas, conferencias y reuniones privadas.</p>
+      <a href="https://wa.me/18095393268?text=Hola,%20quiero%20información%20sobre%20el%20Salón%20de%20Eventos" class="btn-more" target="_blank">Más información</a>
+    </div>
+  </div>
+
+  <div class="card" data-base="0" data-room="Bodas y Conferencias">
+    <img src="boda1.jpeg" alt="Bodas y Conferencias">
+    <div class="card-body">
+      <h3>Bodas y Conferencias</h3>
+      <p>Servicios especializados y coordinación previa disponible.</p>
+      <a href="boda.pdf" class="btn-more" target="_blank">Más información</a>
+    </div>
+  </div>
+
+  <!-- Sección de Fotos -->
+  <h2 style="grid-column:1/-1; text-align:center; margin-bottom:20px; color:#2c3e50;">Seccion de Fotos</h2>
+
+  <div class="card">
+    <img src="seccion1.jpeg" alt="">
+    <div class="card-body">
+      <h3>Estandar</h3>
+      <p>Entrada principal y área de recepción.</p>
+      <a href="https://wa.me/18095393268?text=Hola,%20quiero%20información%20sobre%20el%20lobby" class="btn-more" target="_blank">Más información</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="seccion2.jpeg" alt="">
+    <div class="card-body">
+      <h3>Completo</h3>
+      <p>Disfruta de nuestra piscina en un ambiente familiar.</p>
+      <a href="https://wa.me/18095393268?text=Hola,%20quiero%20información%20sobre%20la%20piscina" class="btn-more" target="_blank">Más información</a>
+    </div>
+  </div>
+</div>
+
+<!-- Botón WhatsApp -->
+<a href="https://wa.me/18095393268?text=Hola,%20quiero%20información%20sobre%20tarifas%20y%20habitaciones" class="whatsapp-float" target="_blank">&#x1F4AC;</a>
+
+<script>
+// Ajuste de precios por mes
+const monthAdjust = {
+  1:0.20, 2:0.15, 3: -0.10, 4:0.12, 5:0.9, 6:0,
+  7:0, 8:0, 9:0, 10:0, 11:0.10, 12:0.20
+};
+
+const checkinInput = document.getElementById('checkin');
+checkinInput.addEventListener('change', () => {
+  const date = new Date(checkinInput.value);
+  if (!isNaN(date)) {
+    const month = date.getMonth() + 1;
+    const cards = document.querySelectorAll('.card');
+    cards.forEach(card => {
+      const base = parseFloat(card.getAttribute('data-base'));
+      if(base > 0){
+        const adjusted = base * (1 + (monthAdjust[month] || 0));
+        card.querySelector('.price').textContent = `USD$ ${adjusted.toFixed(2)} por noche`;
+      }
+    });
+  }
+});
+</script>
+</body>
+</html>

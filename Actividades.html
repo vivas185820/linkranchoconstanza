@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Servicios | Rancho Constanza</title>
+  <meta name="description" content="Servicios y actividades disponibles en el Rancho Constanza." />
+  <style>
+    :root{
+      --bg:#0f172a;
+      --card:#111827;
+      --muted:#94a3b8;
+      --text:#e5e7eb;
+      --accent:#22d3ee;
+      --accent2:#34d399;
+      --ring:#1f2937;
+    }
+    *{box-sizing:border-box;}
+    body{margin:0; font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,sans-serif; background:radial-gradient(1200px 600px at 10% 0%, #0b1229 0%, var(--bg) 45%, #0b1229 100%); color:var(--text);}
+    .wrap{max-width:1100px; margin:clamp(16px,4vw,48px) auto; padding:0 clamp(12px,3vw,24px)}
+    header{display:flex; align-items:center; justify-content:space-between; margin-bottom:28px}
+    .brand{display:flex;align-items:center;gap:10px}
+    .dot{width:12px;height:12px;border-radius:50%;background:linear-gradient(135deg,var(--accent),var(--accent2));box-shadow:0 0 18px rgba(34,211,238,.6)}
+    h1{margin:0;font-size:clamp(24px,3vw,36px)}
+    .subtitle{color:var(--muted);margin-top:4px;font-size:clamp(13px,1.6vw,15px)}
+
+    .grid{display:grid;gap:20px}
+    @media(min-width:720px){.grid{grid-template-columns:repeat(3,1fr)}}
+
+    .card{
+      background:linear-gradient(180deg,rgba(17,24,39,.85),rgba(17,24,39,.65));
+      border:1px solid var(--ring);
+      border-radius:16px;
+      padding:20px;
+      text-align:center;
+      transition:.25s ease;
+    }
+    .card:hover{transform:translateY(-4px); box-shadow:0 8px 22px rgba(0,0,0,.4)}
+    .icon{font-size:36px; margin-bottom:10px; color:var(--accent2)}
+    h2{font-size:clamp(16px,2vw,20px); margin:10px 0 6px}
+    p{font-size:14px; color:var(--muted); margin:0}
+
+    footer{margin-top:32px; text-align:center; font-size:13px; color:var(--muted)}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <span class="dot"></span>
+        <div>
+          <h1>Servicios y Actividades</h1>
+          <div class="subtitle">Disfruta de todas las experiencias en Rancho Constanza</div>
+        </div>
+      </div>
+    </header>
+
+    <div class="grid">
+      <div class="card"><div class="icon">🔥</div><h2>Fogata nocturna</h2><p>De 8:30 pm a 10:00 pm</p></div>
+      <div class="card"><div class="icon">🪵</div><h2>Chimenea</h2><p>Ambiente cálido disponible en las áreas comunes</p></div>
+      <div class="card"><div class="icon">🐴</div><h2>Caballos</h2><p>Requiere coste adicional · Paseos dentro o fuera del área</p></div>
+      <div class="card"><div class="icon">🚵‍♂️</div><h2>Mountain Bike</h2><p>Rutas dentro del área del Rancho</p></div>
+      <div class="card"><div class="icon">🏀</div><h2>Cancha de baloncesto</h2><p>Disponible para juegos y torneos familiares</p></div>
+      <div class="card"><div class="icon">🁢</div><h2>Dominó</h2><p>Mesas disponibles en áreas sociales</p></div>
+      <div class="card"><div class="icon">🏐</div><h2>Voleibol</h2><p>Cancha abierta para todos los huéspedes</p></div>
+      <div class="card"><div class="icon">⚽</div><h2>Fútbol</h2><p>Campo disponible para partidos amistosos</p></div>
+      <div class="card"><div class="icon">🎠</div><h2>Juegos infantiles</h2><p>Zona segura y divertida para los niños</p></div>
+      <div class="card"><div class="icon">🏓</div><h2>Ping Pong</h2><p>Mesas de tenis de mesa disponibles</p></div>
+      <div class="card"><div class="icon">🍊</div><h2>Tours frutal</h2><p>Requiere coordinación previa · Recorrido por fincas frutales</p></div>
+    </div>
+
+  <!-- Botón WhatsApp -->
+  <a href="https://wa.me/18095393268?text=Hola%2C%20quiero%20información%20sobre%20los%20servicios%20del%20hotel" 
+     class="whatsapp-float" 
+     target="_blank">
+    &#x1F4AC;
+  </a>
+
+    <footer>
+      © <span id="yr"></span> Rancho Constanza · Vive la experiencia completa.
+    </footer>
+  </div>
+  <script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
+
+
+
+</body>
+</html>
